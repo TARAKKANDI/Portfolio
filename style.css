@@ -1,0 +1,91 @@
+.navbar{
+    display: flex;
+    flex-direction:row;
+    background-color: grey;
+    justify-content: center;
+    padding: 20px;
+}
+.a-element{
+     padding: 20px;
+     font-size: 1.5em;
+     font-weight: bold; 
+     margin: 0.67em 0; 
+     text-decoration: none; 
+     color: inherit;
+}
+.home{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    color: white;
+    height: 105vh;
+    font-size: 4vh;
+    background-color:black;
+    border: 2px solid white;
+    line-break: auto;
+}
+.home-p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    line-height: 3.5vh;
+    justify-content:space-between;
+    align-items: right;
+}
+.b-element{
+    padding: 20px;
+    display: flex;
+    justify-content: center;   
+}
+.dropdown {
+    padding: 10px;
+    display:block;
+    justify-content:right;
+    position:absolute;
+    margin-bottom: 10px;
+    right: 0;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: aliceblue;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 18px;
+    text-decoration: none;
+    display: flex;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+.copyright{
+    display: flex;
+    flex-direction:row;
+    background-color: rgb(144, 135, 66);
+    justify-content: center;
+    padding: 20px;
+}
+.Contact{
+    display: flex;
+    flex-direction:column;
+    color: green;
+    background-color: black;
+    border: 1px solid white ;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;   
+}
+
+.social-icon{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 20px;  
+}
