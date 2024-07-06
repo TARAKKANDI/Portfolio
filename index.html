@@ -5,73 +5,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px;
+        }
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .navbar .dropbtn {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .navbar .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .navbar .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .navbar .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .navbar .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .home {
+            padding: 20px;
+        }
+        .home h1, .home h2, .home p {
+            text-align: center;
+        }
+        .home p {
+            margin: 20px 0;
+        }
+        .home button {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+        }
+        .contact {
+            padding: 20px;
+            text-align: center;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .social-icons {
+            margin-top: 10px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+        }
+        .social-icon {
+            width: 32px; 
+            height: 32px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            .navbar a, .navbar .dropbtn {
+                display: block;
+                text-align: center;
+                padding: 10px;
+                width: 100%;
+            }
+            .navbar .dropdown-content {
+                position: static;
+                box-shadow: none;
+            }
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
 </head>
 <body>
-        <div class="navbar">
-            <a class="a-element">Home</a>
-            <a class="a-element">Education</a>
-            <a class="a-element">Projects</a>
-            <a class="a-element">Certifications</a>
+    <div class="navbar">
+        <a class="a-element">Home</a>
+        <a class="a-element">Education</a>
+        <a class="a-element">Projects</a>
+        <a class="a-element">Certifications</a>
         <div class="dropdown">
-        <button class="dropbtn">≡</button>
-        <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <button class="dropbtn">≡</button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
         </div>
     </div>
-        </div>
-        <div class="home">
-            <h1 class="home-h1">ABOUT ME</h1>
-            <h2>Hi I' AM TARAK ESWAR</h2>
-            <p="home-p">As a recent Computer Science graduate from Andhra University,I am eager to begin my career in the software industry. I have a solid foundation in programming languages such as Python, Java, and C++,along with practical experience in web development using HTML, CSS, and JavaScript. My hands-on experience includes developing a web application for real-time weather updates and creating a machine learning model for analyzing e-commerce sentiments. I am passionate about solving complex problems and committed to continuous learning, especially in the ever-evolving field of technology. I thrive in collaborative settings and am excited about contributing to innovative projects that have a tangible impact.
-        </p>
-        <a class="b-element">
+    <div class="home">
+        <h1 class="home-h1">ABOUT ME</h1>
+        <h2>Hi, I AM TARAK ESWAR</h2>
+        <p class="home-p">As a recent Computer Science graduate from Andhra University, I am eager to begin my career in the software industry. I have a solid foundation in programming languages such as Python, Java, and C++, along with practical experience in web development using HTML, CSS, and JavaScript. My hands-on experience includes developing a web application for real-time weather updates and creating a machine learning model for analyzing e-commerce sentiments. I am passionate about solving complex problems and committed to continuous learning, especially in the ever-evolving field of technology. I thrive in collaborative settings and am excited about contributing to innovative projects that have a tangible impact.</p>
         <button onclick="location.href='https://online.publuu.com/572110/1284450'">Download CV</button>
-        </a>
-            </div>
+    </div>
+    <div class="contact">
+        <div class="contact-info">
+            <h1>Contact Info</h1>
+            <p>K TARAKA ESWARA RAO</p>
+            <p>7013462359</p>
+            <p>tharakkandi123@gmail.com</p>
         </div>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/tarak-eswar-k-10075121b/">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png" class="social-icon">
+            </a>
+            <a href="https://accounts.google.com/">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/768px-Gmail_icon_%282020%29.svg.png" class="social-icon">
+            </a>
         </div>
-        <div class="Contact">
-            <div class="contact-info">
-                <h1>Contact-info</h1>
-                <p>K TARAKA ESWARA RAO</p>
-                <P>7013462359</P>
-                <P>tharakkandi123@gmail.com</P>
-                </div>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/tarak-eswar-k-10075121b/">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png" class="social-icon">
-                    </a>
-            </div>
-               <style>
-                .social-icon{
-                    width: 32px; 
-                    height: 32px; 
-                }
-                </style>
-                <a href="https://accounts.google.com/">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/768px-Gmail_icon_%282020%29.svg.png" class="social-icon">
-                </a>
-                </div>
-                <style>
-                     .social-icon{
-                         width: 32px; 
-                         height: 32px;  
-                     }
-                     </style>
-                </div>
-                <style>
-                 .social-icon{
-                     width: 30px; 
-                     height: 32px;
-                 }
-                 </style> 
-            </div>
-        </div>
-        </div>
+    </div>
     <footer class="copyright">
-        @Tarak copyright"©"
+        @Tarak copyright "©"
     </footer>
 </body>
 </html>
